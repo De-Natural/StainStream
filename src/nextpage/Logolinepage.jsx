@@ -4,18 +4,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import logo1 from '../assets/logo1.jpeg';
-import logo2 from '../assets/logo2.jpg';
-import logo3 from '../assets/logo3.jpg';
-import logo4 from '../assets/logo4.jpg';
-import logo5 from '../assets/logo5.jpg';
-import logo6 from '../assets/logo6.jpg';
-import logo7 from '../assets/logo7.png';
+import passport1 from '../assets/passport 1.jpeg';
+import passport2 from '../assets/passport 2.jpeg';
+import passport3 from '../assets/passport 3.jpeg';
+import passport4 from '../assets/passport 4.jpg';
+import passport5 from '../assets/passport 5.jpeg';
+
 
 export default function Logolinepage( { customDiv } ) {
     const ArryLogo = [
-        logo1, logo2, logo3, logo4, logo5, logo6, logo7,
-        logo1, logo2, logo3, logo4, logo5, logo6, logo7,
+        passport1, passport2, passport3, passport4, passport5,
+        passport1, passport2, passport3, passport4, passport5,
     ];
 
     const [slidesPerView, setSlidesPerView] = useState(6);
