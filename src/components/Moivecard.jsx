@@ -6,11 +6,11 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 import { useNavigate } from 'react-router-dom';
 import { useImageContext } from '../context/ImageContext';
-import logo1 from '../assets/logo1.jpeg';
-import logo2 from '../assets/logo2.jpg';
-import logo3 from '../assets/logo3.jpg';
-import logo4 from '../assets/logo4.jpg';
-import logo5 from '../assets/logo5.jpg';
+import action1 from '../assets/action1.jpeg';
+import action2 from '../assets/action2.jpg';
+import action3 from '../assets/action3.jpeg';
+import action4 from '../assets/action4.jpeg';
+import action5 from '../assets/action5.jpeg';
 
 export default function Moivecard() {
   const [slidesPerView, setSlidesPerView] = useState(5);
@@ -18,7 +18,7 @@ export default function Moivecard() {
   const { setCurrentImage } = useImageContext(); // Access the context
   const navigate = useNavigate(); // Initialize the navigation hook
 
-  const ArrMovie = [logo1, logo2, logo3, logo4, logo5];
+  const ArrMovie = [action1, action2, action3, action4, action5];
 
   const handleImageClick = (item) => {
     setCurrentImage(item); // Update context with the clicked image
