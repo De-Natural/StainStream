@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .icon-wrapper i{
+        color: yellow;
+     }
+    @media screen and (max-width: 760px){
+        .board{
+           left: 10%;
+           top: 35%;
+           width: 80%;
+        }
+        .logoline_swiper{
+         overflow: hidden;
+
+        }
+        .logoline_swiper  .slidesPerView{
+         display: calc(1);
+        }
+     }
+}
