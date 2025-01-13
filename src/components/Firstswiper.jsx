@@ -54,14 +54,15 @@ export default function Firstswiper() {
   return (
     <div className="h-[calc(100%-50px)] overflow-hidden w-full relative">
 
+
       <div className='w-full h-full relative z-10'>
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]} // Add Autoplay module
+          modules={[Navigation, Pagination, Autoplay]} 
           // navigation
           pagination={{ clickable: true }}
           autoplay={{
             delay: 3000,
-            disableOnInteraction: false, // Continue autoplay even after user interactions
+            disableOnInteraction: false, 
           }}
           spaceBetween={5}
           slidesPerView={1}

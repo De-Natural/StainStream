@@ -4,6 +4,8 @@ import Homepage from './page/Homepage';
 import Firststage from './subpage/Firststage';
 import Nextpage from './nextpage/Nextpage';
 import Kinpage from './kinpage/kinpage';
+import Signup from './Signup page/Signup';
+import Login from './Login page/Login';
 import { ImageProvider } from './context/ImageContext';
 
 
@@ -17,6 +19,8 @@ function App() {
             <Route path="/subpage" element={<Firststage />} />
             <Route path="/nextpage" element={<Nextpage />} />
             <Route path="/kinpage" element={<Kinpage />} />
+            <Route path='/Signup' element={<Signup />} />
+            <Route path='/Login' element={<Login />} />
           </Routes>
         </div>
       </Router>

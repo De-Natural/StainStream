@@ -15,14 +15,14 @@ import action5 from '../assets/action5.jpeg';
 export default function Moivecard() {
   const [slidesPerView, setSlidesPerView] = useState(5);
   const [spaceBetween, setSpaceBetween] = useState(20);
-  const { setCurrentImage } = useImageContext(); // Access the context
-  const navigate = useNavigate(); // Initialize the navigation hook
+  const { setCurrentImage } = useImageContext();
+  const navigate = useNavigate();
 
   const ArrMovie = [action1, action2, action3, action4, action5];
 
   const handleImageClick = (item) => {
-    setCurrentImage(item); // Update context with the clicked image
-    navigate('/nextpage'); // Navigate to the next page
+    setCurrentImage(item);
+    navigate('/nextpage');
   };
 
   return (
