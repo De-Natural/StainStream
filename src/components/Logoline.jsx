@@ -54,7 +54,7 @@ export default function Logoline() {
 
   return (
     <>
-      <main className='board h-60 w-2/4 p-2 flex flex-col items-center justify-evenly absolute z-50 top-1/2 left-3'>
+      <main className='h-fit md:h-60 w-full md:w-2/4 p-2 flex flex-col items-center justify-evenly absolute z-10 md:z-30 top-[35%] left-0 md:left-3'>
         <h2 className='text-xl font-serif text-white'>Star wars: The forces Awaken</h2>
         <span className='text-white text-xs opacity-50'>2hrs:40min.2022.Fantasy.Action</span>
         <p className='text-white text-sm'>
@@ -100,7 +100,7 @@ export default function Logoline() {
         >
           {ArryLogo.map((item, index) => (
             <SwiperSlide key={index}>
-              <DisplayCard className="h-20 w-48 object-cover" url={item} />
+              <DisplayCard className="h-10 w-28 object-contain" url={item} />
             </SwiperSlide>
           ))}
         </Swiper>

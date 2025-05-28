@@ -37,7 +37,7 @@ export default function Moivecard() {
       >
         {ArrMovie.map((item, index) => (
           <SwiperSlide key={index} onClick={() => handleImageClick(item)}>
-            <DisplayCard className="h-fit w-full object-cover cursor-pointer" url={item} />
+            <DisplayCard className="h-full w-full object-cover cursor-pointer" url={item} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -48,7 +48,7 @@ export default function Moivecard() {
 function DisplayCard({ url, className }) {
   return (
     <div className={className}>
-      <img src={url} alt="Logo" className="object-cover h-full w-full rounded-xl" />
+      <img src={url} alt="Logo" className="object-cover h-16 w-full rounded-xl" />
     </div>
   );
 }

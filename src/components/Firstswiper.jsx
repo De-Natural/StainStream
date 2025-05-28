@@ -71,12 +71,12 @@ export default function Firstswiper() {
         >
           {dataArr?.map((item, index) => (
             <SwiperSlide key={index}>
-              <DisplayCard className={`h-full w-full object-cover`} url={item?.backdrop_path? item?.backdrop_path : movieImage2} />
+              <DisplayCard className={`h-full w-full object-cover `} url={item?.backdrop_path? item?.backdrop_path : movieImage2} />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <div className="absolute bg-[linear-gradient(to_top,black,rgba(0,0,0,0.8),rgba(0,0,0,0.5),rgba(0,0,0,0))] w-full h-full top-0 left-0 z-30"></div>
+      <div className="absolute bg-[linear-gradient(to_top,black,rgba(0,0,0,0.8),rgba(0,0,0,0.5),rgba(0,0,0,0))] w-full h-full top-0 left-0 z-10"></div>
       <Logoline />
     </div>
   );

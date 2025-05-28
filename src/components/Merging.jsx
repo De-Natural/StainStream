@@ -13,8 +13,8 @@ export default function Merging({ setSelectedUrl }) {
   const podCast = [pod1, pod2, pod3, pod4, pod1, pod2, pod3, pod4];
 
   return (
-    <div className="h-[450px] w-full flex items-center gap-20 absolute z-50 top-[30%] left-3">
-      <main className="h-full w-[60%] p-2 flex flex-col items-center justify-evenly">
+    <div className="h-[450px] w-full flex items-center gap-20 absolute z-50 top-[20%] left-3">
+      <main className="h-full w-[60%] p-2 hidden md:flex flex-col items-center justify-evenly">
         <div className="pasty h-[80px] w-full">
           <h2 className="text-xl font-serif text-white">Features in saintStream</h2>
           <span className="text-white text-xs opacity-50">
@@ -44,7 +44,7 @@ export default function Merging({ setSelectedUrl }) {
         </div>
       </main>
 
-      <div className="h-full w-[30%] mr-[-10px] sm:mr-[10px] sm:ml-[-40px] sm:w-[60%]">
+      <div className="h-full w-full md:w-[30%] mr-[-10px] sm:mr-[10px] sm:ml-[-40px] sm:w-[60%]">
         <Swiper
           modules={[Navigation, Pagination]}
           navigation
@@ -57,7 +57,7 @@ export default function Merging({ setSelectedUrl }) {
               spaceBetween: 10,
             },
           }}
-          className="h-full w-[70%] rounded-xl"
+          className="h-full w-11/12 md:w-96 rounded-xl"
         >
           {podCast.map((item, index) => (
             <SwiperSlide key={index} className="h-full">

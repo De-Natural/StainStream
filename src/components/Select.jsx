@@ -70,7 +70,7 @@ function Select() {
             </section>
           </div>
         </figcaption>
-        <div className="h-full w-full gap-2 sm:w-[50%] grid grid-cols-2 p-5 place-items-center">
+        <div className="h-full w-full gap-2 sm:w-[50%] grid grid-cols-1 md:grid-cols-2 p-5 place-items-center">
           {images.map((image, index) => (
             <div key={index} className="h-40 w-64 flex items-center justify-around">
               <article className="h-28 w-28 border rounded-md cursor-pointer">
